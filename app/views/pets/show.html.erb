@@ -2,3 +2,5 @@
 <p>[<%= @pet.category %>] - found on <%= @pet.found %></p>
 
 <%= link_to "Back to All Pets", pets_path %>
+<%= link_to "I found the pet", pet_path(@pet), method: :delete %>
+<%= link_to "Edit my information", edit_pet_path(@pet) %>
