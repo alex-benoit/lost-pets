@@ -1,14 +1,4 @@
 <h1>Edit <%= @pet.name %>'s info</h1>
 
-<%= form_for @pet do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+<%= render 'form' %>
 
-  <%= f.label :category %>
-  <%= f.text_field :category %>
-
-  <%= f.label :found %>
-  <%= f.date_field :found %>
-
-  <%= f.submit %>
-<% end %>

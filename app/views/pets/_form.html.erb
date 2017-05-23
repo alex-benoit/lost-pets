@@ -1,0 +1,19 @@
+<%= simple_form_for @pet do |f| %>
+  <%= f.input :name %>
+  <%= f.input :category, collection: Pet::CATEGORIES %>
+  <%= f.input :found %>
+  <%= f.submit class: 'btn btn-success' %>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
